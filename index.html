@@ -1,162 +1,605 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head><meta charset="gb18030">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resumo - Matheus de Mello</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Matheus de Mello</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interesses</a></li>
-                </ul>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mellow Up - Portfolio | Desenvolvedor Full Stack | Laravel, Next.js, Delphi</title>
+    <meta name="description" content="Portfolio de Mellow Up - Desenvolvedor Full Stack com experiência em Laravel, FilamentPHP, Next.js, NestJS, Delphi e Oracle. Especializado em desenvolvimento de aplicações web empresariais e sistemas de rastreamento.">
+    <meta name="keywords" content="desenvolvedor, full stack, laravel, filamentphp, nextjs, nestjs, delphi, oracle, programador, software engineer, portfolio">
+    <meta name="author" content="Mellow Up">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mellow-up.github.io/portfolio-vscode-theme/">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mellow Up - Portfolio | Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfolio de Mellow Up - Desenvolvedor Full Stack com experiência em Laravel, FilamentPHP, Next.js, NestJS, Delphi e Oracle.">
+    <meta property="og:url" content="https://mellow-up.github.io/portfolio-vscode-theme/">
+    <meta property="og:site_name" content="Mellow Up Portfolio">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mellow Up - Portfolio | Desenvolvedor Full Stack">
+    <meta name="twitter:description" content="Portfolio de Mellow Up - Desenvolvedor Full Stack com experiência em Laravel, FilamentPHP, Next.js, NestJS, Delphi e Oracle.">
+    
+    <!-- Structured Data (JSON-LD) for better SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mellow Up",
+      "jobTitle": "Engenheiro de Software Sênior",
+      "url": "https://mellow-up.github.io/portfolio-vscode-theme/",
+      "sameAs": [
+        "https://www.linkedin.com/in/mellow-up/",
+        "https://github.com/MattMello88/"
+      ],
+      "knowsAbout": [
+        "Laravel",
+        "FilamentPHP",
+        "Next.js",
+        "NestJS",
+        "Delphi",
+        "Oracle",
+        "Python",
+        "Java",
+        "PHP",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ribeirão Preto",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Activity Bar (Barra lateral esquerda com ícones) -->
+        <aside class="activity-bar">
+            <div class="activity-icon active" data-section="explorer" title="Explorador">
+                <i class="fas fa-folder-open"></i>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Matheus
-                        <span class="text-primary">Mello</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Rua: Miguel Barrachini, 510 · 📱 (16) 99183-8523 · ✉️
-                        <a href="mailto:matheusnarciso@hotmail.com" target="_blank">matheusnarciso@hotmail.com</a>
-                    </div>
-                    <p class="lead mb-5"><a href="https://mattmello88.github.io/curriculum/APP_Matheus_Mello..pdf" target="_blank">Curriculum em PDF</a></p>
-                    <p class="lead mb-5">Desde o ano de 2010 trabalhando com análise e desenovlimento de software tanto 
-                        com aplicações web quanto desktop. Busco sempre aprimorar maneiras para desenvolver e aumentar a agilidade na produtividade. </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/matheus-mello-4a717964/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://mattmello88.github.io/mattmello88/" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Primeiro Trabalho</h3>
-                            <div class="subheading mb-3">Famoso faz de tudo!</div>
-                            <p>Adiministravas base de dados, realizava bakcups e importação de Oracle. Formatava computadores e instalava os software. E dava manutenção nos software de gestão, como, Financeiro, RH, Controle de Usuário e Controle de Versão.</p>
-                            <div>Delphi // C# // Oracle // MSSQL</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Fevereiro 2011 - Maio 2013</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desenvolver</h3>
-                            <div class="subheading mb-3">Pleno</div>
-                            <p>Analise e criação de documentação de requisito do Software e Técnico. Desenvolvimento de Software de gestão hospitalar como Prontuário Eletrônico do Paciênte, Compras, Estoque, Financeiro e Faturamento.</p>
-                            <div>Delphi // Oracle // MSSQL</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Junho 2013 - Janeiro 2016</span></div>
-                    </div>
+            <div class="activity-icon" data-section="search" title="Buscar">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="activity-icon" data-section="git" title="GitHub">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="activity-icon" data-section="extensions" title="Habilidades">
+                <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <div class="activity-icon" data-section="settings" title="Configurações">
+                <i class="fas fa-cog"></i>
+            </div>
+        </aside>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Analista e Desenvolvedor Senior</h3>
-                            <div class="subheading mb-3">Soluções Fiscal</div>
-                            <p>Manutenção e melhoramento do software de gestão em soluções fiscais e auditorias fiscais. Requisitos é de acorodo com a liberação SPEDs mediantes as novas leis aprovadas.</p>
-                            <div>Delphi // C# // Oracle // MSSQL</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Fevereiro 2016 - Dezembro 2020</span></div>
-                    </div>
+        <!-- Sidebar (Explorador de arquivos) -->
+        <aside class="sidebar" id="explorer-panel">
+            <div class="sidebar-header">
+                <div class="sidebar-title">
+                    <i class="fas fa-folder"></i>
+                    <span>EXPLORADOR</span>
+                </div>
+                <div class="sidebar-actions">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Desenvolverdor Web Senior</h3>
-                            <div class="subheading mb-3">Porque?</div>
-                            <p>Meus interesses é web, sempre acreditei que o futuro estava na internet. Minhas experiências mostram em outras linguagens. Entretanto, tudo que aprendia refazia em PHP, Javascript, HTML, CSS. Fiz muito sites e serviços onlines para amigos. O Futuro esta na libertada online. </p>
-                            <p>O que me motiva hoje é poder ajudar meus amigos desenvolvedores. Por isto nasceu <b>ff-core</b>. Um componente que trás agilidade e qualidade no desenvolvimento web.</p>
-                            <p>Saiba mais sobre <a href="https://github.com/ff-core"><b>ff-core</b></a> meu componente <a href="https://ff-core.github.io/ff-core/">clicando aqui</a>. E veja o exemplo construído <a href="https://matheusmello.info/live/public/Exemples/Escritorios">clicando aqui</a></a></p>
+                <div class="section-content">
+                    <div class="folder">
+                    <div class="folder-toggle active" data-folder="sobre-mim">
+                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-folder-open"></i>
+                            <span>Sobre Mim</span>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Objetivo - Presente</span></div>
+                        <div class="folder-content active">
+                            <div class="file active" data-content="about">
+                                <i class="fas fa-file-alt"></i>
+                            <span>README.md</span>
+                       </div>
                     </div>
+                </div>
 
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Educação</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Universidade Barão de Maua</h3>
-                            <div class="subheading mb-3">Bacharelado </div>
-                            <div>Ciência da Computação</div>
-                            <p>GPA: 3.23</p>
+                <div class="folder">
+                    <div class="folder-toggle" data-folder="projetos">
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-folder"></i>
+                            <span>Projetos</span>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Janeiro 2007 - Dezembro 2010</span></div>
+                        <div class="folder-content">
+                            <div class="file" data-content="projects">
+                                <i class="fas fa-code"></i>
+                                <span>projetos.md</span>
+                            </div>
+                        <div class="file" data-content="projects-web">
+                            <i class="fas fa-globe"></i>
+                            <span>web-apps.md</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Habilidades</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-laravel"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item">NextJS</li>
-                        <li class="list-inline-item">Delphi</li>
-                        <li class="list-inline-item">Oracle</li>
-                        <li class="list-inline-item">MSSQL</li>
-                    </ul>
+
+                <div class="folder">
+                    <div class="folder-toggle" data-folder="experiencia">
+                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-folder"></i>
+                            <span>Experiência</span>
+                        </div>
+                        <div class="folder-content">
+                            <div class="file" data-content="experience">
+                            <i class="fas fa-briefcase"></i>
+                                       <span>experiencia.md</span>
+                            </div>
+                    </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interesses</h2>
-                    <p>Além de ser um desenvolvedor, eu aproveito a maior parte do tempo ao ar livre. Adoro fazer esportes, jogar bola com amigos, andar de bike e treinos aerobicos.</p>
-                    <p class="mb-0">Quando forçado a ficar dentro de casa, sou um aspirante a chef e passo grande parte do meu tempo livre explorando os mais recentes avanços tecnológicos no mundo do desenvolvimento web e desktop.</p>
+
+                <div class="folder">
+                    <div class="folder-toggle" data-folder="ia">
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-folder"></i>
+                        <span>Inteligência Artificial</span>
+                    </div>
+                    <div class="folder-content">
+                        <div class="file" data-content="ai">
+                            <i class="fas fa-robot"></i>
+                            <span>ia.md</span>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+                <div class="folder">
+                    <div class="folder-toggle" data-folder="contato">
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-folder"></i>
+                        <span>Contato</span>
+                    </div>
+                    <div class="folder-content">
+                        <div class="file" data-content="contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato.md</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content (Editor central) -->
+        <main class="main-content">
+            <div class="tabs-bar">
+                <div class="tab active" data-content="about">
+                    <i class="fas fa-file-alt"></i>
+                    <span>README.md</span>
+                    <i class="fas fa-times close-tab"></i>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="content active" id="about-content">
+                    <div class="markdown-body">
+                        <h1>Mellow Up</h1>
+                        <p>Olá! Bem-vindo ao meu portfolio inspirado no tema <strong>Shades of Purple (Super Dark)</strong> do VSCode.</p>
+                        
+                        <!-- Estatísticas -->
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">17+</div>
+                                <div class="stat-label">Anos de Experiência</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Linguagens Dominadas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projetos Desenvolvidos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">9+</div>
+                                <div class="stat-label">Anos na Empresa Atual</div>
+                            </div>
+                        </div>
+
+                        <div class="cta-buttons" style="margin: 30px 0;">
+                            <a href="#contact" class="cta-button primary">
+                                <i class="fas fa-comments"></i>
+                                Vamos Conversar
+                            </a>
+                            <a href="mailto:matheus.gnu@gmail.com?subject=Proposta de Trabalho" class="cta-button secondary">
+                                <i class="fas fa-envelope"></i>
+                                Enviar Email
+                            </a>
+                            <a href="https://wa.me/5516991838523" target="_blank" class="cta-button secondary">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+
+                        <h2>Sobre Mim</h2>
+                        <p>Iniciei minha trajetória na área de Tecnologia da Informação em 2007, ao ingressar no curso de Ciência da Computação, mesmo sem conhecimentos prévios. Em 2010, já possuía uma sólida formação, tendo adquirido domínio em linguagens como C++, Java, Python, PERL e PHP, com forte embasamento em Programação Orientada a Objetos (POO), incluindo os conceitos de herança, encapsulamento, abstração e polimorfismo, além da aplicação de Design Patterns como MVC, GoF, Abstract Factory e Singleton.</p>
+                        <p>Durante a formação, também desenvolvi competências em modelagem de banco de dados, bem como no uso e administração de sistemas operacionais Windows e Linux. Essa base técnica foi fundamental para minha entrada no mercado de trabalho.</p>
+                        <p>Sou apaixonado por tecnologia e estou em constante evolução, sempre atento às inovações do setor e buscando novas formas de otimizar processos e agregar valor ao negócio.</p>
+                        <p>Atualmente, aplico minha experiência no desenvolvimento de soluções empresariais, com foco na melhoria contínua de produtos, na eficiência dos processos operacionais e no alinhamento das soluções tecnológicas com os objetivos estratégicos da organização.</p>
+                        <h3>Habilidades Principais</h3>
+                        <div class="skills-grid">
+                            <div class="skills-category">
+                                <h4>Linguagens de Programação</h4>
+                                <ul>
+                                    <li>C++</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>PERL</li>
+                                    <li>PHP</li>
+                                    <li>Pascal</li>
+                                    <li>C# (Mobile)</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Frameworks e Tecnologias</h4>
+                                <ul>
+                                    <li>Delphi (2009, Sydney)</li>
+                                    <li>Next.js</li>
+                                    <li>NestJS</li>
+                                    <li>Laravel</li>
+                                    <li>FilamentPHP</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Banco de Dados</h4>
+                                <ul>
+                                    <li>Oracle/PLSQL</li>
+                                    <li>MySQL</li>
+                                    <li>MSSQL</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Conceitos e Padrões</h4>
+                                <ul>
+                                    <li>Programação Orientada a Objetos (POO)</li>
+                                    <li>Design Patterns (MVC, GoF, Abstract Factory, Singleton)</li>
+                                    <li>Modelagem de Banco de Dados</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Ferramentas e DevOps</h4>
+                                <ul>
+                                    <li>Git / GitLab</li>
+                                    <li>CI/CD</li>
+                                    <li>Administração de Sistemas (Windows e Linux)</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h4>Idiomas</h4>
+                                <ul>
+                                    <li>Espanhol - Avançado</li>
+                                    <li>Inglês - Básico a Intermediário</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="projects-content">
+                    <div class="markdown-body">
+                        <h1>Projetos</h1>
+                        <h2>Principais Projetos</h2>
+                        
+                        <div class="project-card">
+                            <h3>Torre de Controle</h3>
+                            <p class="date">Janeiro de 2023 - Presente</p>
+                            <p>Sistema de rastreamento de caminhão com integração com rastreador omnilink. O projeto lida com volume muito grande de dados de posicionamento, utilizando fila com RabbitMQ para processar esse grande volume de dados de forma eficiente.</p>
+                            <p><strong>Desenvolvimento e Arquitetura:</strong> O projeto foi iniciado por mim com a criação de microserviços para ler as filas do RabbitMQ, processar os cadastros e gerar relatórios da tabela de movimentação das posições, que possui volume muito grande de dados.</p>
+                            <p>Inclui gestão dos carros no mapa em tempo real, gestão completa da viagem do início ao fim com integração da CT-e e gestão de alvo.</p>
+                            <div class="tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">NestJS</span>
+                                <span class="tag">RabbitMQ</span>
+                                <span class="tag">Microserviços</span>
+                                <span class="tag">Rastreamento</span>
+                                <span class="tag">Integração CT-e</span>
+                                <span class="tag">Big Data</span>
+                                <span class="tag">Arquitetura Distribuída</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>GitLab CE - Migração e CI/CD</h3>
+                            <p class="date">Janeiro de 2024 - Setembro de 2024</p>
+                            <p>Migração de um ambiente antigo e liberação de release manual para um ambiente novo em gestão de projeto, controle e versão (Git) e esteira CI/CD para teste/release automático. Associado à Painel Fiscal Consultoria Ltda.</p>
+                            <div class="tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">GitLab</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">DevOps</span>
+                                <span class="tag">Gestão de Projeto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="projects-web-content">
+                    <div class="markdown-body">
+                        <h1>Web Applications</h1>
+                        <p>Estou focado em desenvolver aplicações web apps em Laravel com foco na agilidade utilizando FilamentPHP. Esta abordagem permite criar interfaces administrativas modernas e funcionais de forma rápida e eficiente.</p>
+                        <h2>Foco Tecnológico</h2>
+                        <p>Utilizo <strong>Laravel</strong> como framework backend principal e <strong>FilamentPHP</strong> para acelerar o desenvolvimento de painéis administrativos e aplicações web empresariais, focando sempre na agilidade e qualidade do código.</p>
+                        <h2>Recursos Principais</h2>
+                        <ul>
+                            <li>Desenvolvimento ágil com Laravel e FilamentPHP</li>
+                            <li>Painéis administrativos modernos e funcionais</li>
+                            <li>Design responsivo</li>
+                            <li>Performance otimizada</li>
+                            <li>Experiência do usuário excepcional</li>
+                            <li>CRUDs rápidos e eficientes</li>
+                            <li>Integração fácil com banco de dados</li>
+                        </ul>
+                        <div class="tags" style="margin-top: 20px;">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">FilamentPHP</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Web Apps</span>
+                            <span class="tag">Admin Panel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="experience-content">
+                    <div class="markdown-body">
+                        <h1>Experiência Profissional</h1>
+                        
+                        <div class="experience-item">
+                            <h2>Engenheiro de Software Sênior / Analista Programador Sênior</h2>
+                            <p class="company">Grupo Painel Fiscal - Bolsa Nacional ICMS</p>
+                            <p class="date">Fevereiro de 2016 - Presente · 9 anos 10 meses</p>
+                            <p>Ribeirão Preto, São Paulo, Brasil · Presencial</p>
+                            <p>Desenvolvimento de soluções empresariais utilizando Delphi Sydney, ORACLE/PLSQL, Pascal e Next.js. Trabalhando com foco na melhoria contínua de produtos e eficiência dos processos operacionais.</p>
+                            <div class="tags">
+                                <span class="tag">Delphi</span>
+                                <span class="tag">Oracle/PLSQL</span>
+                                <span class="tag">Pascal</span>
+                                <span class="tag">Next.js</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <h2>Analista de Sistema</h2>
+                            <p class="company">SYSPEC LTD</p>
+                            <p class="date">Junho de 2013 - Janeiro de 2016 · 2 anos 8 meses</p>
+                            <p>Ribeirão Preto, São Paulo</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <h2>Analista de Sistema</h2>
+                            <p class="company">Biosalc, Sistemas y Soluciones</p>
+                            <p class="date">Fevereiro de 2011 - Maio de 2013 · 2 anos 4 meses</p>
+                            <p>Ribeirão e Região, Brasil</p>
+                            <p>Trabalhando com programação utilizando Delphi 2009 e C# Mobile, além de Banco de Dados Oracle e MSSQL.</p>
+                            <div class="tags">
+                                <span class="tag">Delphi 2009</span>
+                                <span class="tag">C# Mobile</span>
+                                <span class="tag">Oracle</span>
+                                <span class="tag">MSSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <h2>Assistente Administrativo / Escriturário</h2>
+                            <p class="company">Dux Cobranças Ltda</p>
+                            <p class="date">Fevereiro de 2009 - Janeiro de 2011 · 2 anos</p>
+                            <p>Ribeirão e Região, Brasil</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <h2>Escriturário</h2>
+                            <p class="company">Banco do Brasil</p>
+                            <p class="date">Março de 2008 - Julho de 2008 · 5 meses</p>
+                            <p>Pontal - SP</p>
+                            <p>Contrato temporário, atividade de atendimento de pessoa física.</p>
+                        </div>
+
+                        <h2>Formação Acadêmica</h2>
+                        <div class="experience-item">
+                            <h2>Graduação em Ciência da Computação</h2>
+                            <p class="company">Centro Universitário Barão de Mauá</p>
+                            <p class="date">2007 - 2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="ai-content">
+                    <div class="markdown-body">
+                        <h1>Inteligência Artificial no Desenvolvimento</h1>
+                        <p>Utilizo Inteligência Artificial como copiloto no desenvolvimento de software, aproveitando ferramentas modernas para acelerar e melhorar a qualidade do código.</p>
+                        
+                        <h2>Ferramentas Utilizadas</h2>
+                        <div class="project-card">
+                            <h3>Cursor</h3>
+                            <p>Editor de código com IA integrada que utilizo como principal ferramenta de desenvolvimento. Permite assistência contextual durante a escrita de código.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>OpenAI</h3>
+                            <p>Utilizo modelos da OpenAI (GPT) para análise de código, geração de documentação, revisão de lógica e sugestões de melhorias.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Manus</h3>
+                            <p>Ferramenta adicional de IA que complementa o fluxo de trabalho, auxiliando em tarefas específicas de desenvolvimento.</p>
+                        </div>
+
+                        <h2>Abordagem e Metodologia</h2>
+                        <p>Minha abordagem com IA no desenvolvimento segue princípios cuidadosos e estruturados:</p>
+                        
+                        <h3>Uso como Copiloto</h3>
+                        <p>A IA atua como assistente durante o desenvolvimento, sugerindo código, identificando possíveis problemas e oferecendo alternativas, mas sempre mantendo o controle e a decisão final comigo.</p>
+
+                        <h3>Documentação e Regras</h3>
+                        <ul>
+                            <li><strong>Documentação clara:</strong> Sempre documento o contexto e requisitos para que a IA possa oferecer sugestões mais precisas</li>
+                            <li><strong>Regras de uso:</strong> Estabeleço regras e padrões específicos para garantir que o código gerado siga os padrões do projeto</li>
+                            <li><strong>Contexto detalhado:</strong> Forneço contexto completo sobre a arquitetura, padrões e requisitos do projeto</li>
+                        </ul>
+
+                        <h3>Análise e Validação</h3>
+                        <div class="experience-item">
+                            <h3>Princípios de Uso Responsável</h3>
+                            <ul>
+                                <li><strong>Análise crítica:</strong> Sempre analiso cuidadosamente o resultado gerado pela IA antes de implementar</li>
+                                <li><strong>Validação da solicitação:</strong> Verifico se o código gerado realmente atende à solicitação original</li>
+                                <li><strong>Revisão de lógica:</strong> Reviso a lógica, estrutura e segurança do código gerado</li>
+                                <li><strong>Testes:</strong> Testo todas as funcionalidades geradas para garantir que funcionam corretamente</li>
+                            </ul>
+                        </div>
+
+                        <h3>Desenvolvimento Incremental</h3>
+                        <p><strong>Pedaço por pedaço, não grandes blocos:</strong></p>
+                        <p>Acredito firmemente que a melhor abordagem é trabalhar de forma incremental:</p>
+                        <ul>
+                            <li><strong>Pequenas iterações:</strong> Solicito funcionalidades pequenas e específicas, facilitando a análise e validação</li>
+                            <li><strong>Melhor compreensão:</strong> Código em pequenas partes é mais fácil de entender, revisar e manter</li>
+                            <li><strong>Menor risco:</strong> Reduz a chance de erros e facilita a identificação de problemas</li>
+                            <li><strong>Controle de qualidade:</strong> Cada pedaço pode ser validado independentemente antes de seguir para o próximo</li>
+                        </ul>
+
+                        <h2>Benefícios desta Abordagem</h2>
+                        <div class="tags" style="margin-top: 20px;">
+                            <span class="tag">Desenvolvimento Ágil</span>
+                            <span class="tag">Qualidade de Código</span>
+                            <span class="tag">Aprendizado Contínuo</span>
+                            <span class="tag">Uso Responsável de IA</span>
+                            <span class="tag">Desenvolvimento Incremental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="certifications-content">
+                    <div class="markdown-body">
+                        <h1>Certificações e Cursos</h1>
+                        <p>Cursos e certificações que complementam minha formação técnica:</p>
+                        
+                        <div class="project-card">
+                            <h3>Delphi XE10 Berlin - Criação APP</h3>
+                            <p>Curso focado no desenvolvimento de aplicativos móveis utilizando Delphi XE10 Berlin.</p>
+                            <div class="tags">
+                                <span class="tag">Delphi</span>
+                                <span class="tag">Mobile</span>
+                                <span class="tag">App Development</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Delphi XE10 Berlin - Datasnap</h3>
+                            <p>Curso sobre desenvolvimento de aplicações distribuídas usando DataSnap no Delphi XE10 Berlin.</p>
+                            <div class="tags">
+                                <span class="tag">Delphi</span>
+                                <span class="tag">DataSnap</span>
+                                <span class="tag">Arquitetura Distribuída</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h3>Graduação em Ciência da Computação</h3>
+                            <p>Centro Universitário Barão de Mauá (2007 - 2010)</p>
+                            <p>Formação acadêmica completa com foco em fundamentos de programação, algoritmos, estruturas de dados, engenharia de software e sistemas distribuídos.</p>
+                            <div class="tags">
+                                <span class="tag">Graduação</span>
+                                <span class="tag">Ciência da Computação</span>
+                            </div>
+                        </div>
+
+                        <h2>Idiomas</h2>
+                        <div class="experience-item">
+                            <h3>Espanhol</h3>
+                            <p>Nível: <strong>Avançado</strong></p>
+                            <p>Comunicação fluente em ambiente profissional e técnico.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Inglês</h3>
+                            <p>Nível: <strong>Básico a Intermediário</strong></p>
+                            <p>Capacidade de leitura de documentação técnica e comunicação em contextos profissionais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="contact-content">
+                    <div class="markdown-body">
+                        <h1>Contato</h1>
+                        <p>Entre em contato comigo através dos canais abaixo. Estou sempre aberto a novas oportunidades e projetos interessantes!</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/MattMello88/" target="_blank" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mellow-up/" target="_blank" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:matheus.gnu@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://wa.me/5516991838523" target="_blank" class="contact-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Chat Panel (Painel direito) -->
+        <aside class="chat-panel">
+            <div class="chat-header">
+                <span>CHAT</span>
+            </div>
+            <div class="chat-content">
+                <div class="chat-welcome">
+                    <h2>Criar com modo agente.</h2>
+                    <p>As respostas da IA podem estar incorretas.</p>
+                    <button class="chat-action-button">
+                        Gerar instruções para integrar a IA à base de código.
+                    </button>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Mensagens aparecerão aqui -->
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <div class="chat-input-wrapper">
+                    <input type="text" 
+                           id="chat-input" 
+                           placeholder="Adicionar contexto..." 
+                           class="chat-input">
+                    <div class="chat-controls">
+                        <button class="chat-control-btn" title="Adicionar contexto">
+                            <i class="fas fa-hashtag"></i>
+                        </button>
+                        <button class="chat-control-btn" title="Extensões">
+                            <i class="fas fa-at"></i>
+                        </button>
+                        <select class="chat-mode-select">
+                            <option>Agent</option>
+                            <option>Auto</option>
+                        </select>
+                        <button class="chat-send-btn" id="chat-send">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

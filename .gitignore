@@ -1,0 +1,11 @@
+node_modules/
+linkedin-data.json
+*.log
+.DS_Store
+dist/
+build/
+.vscode/
+.idea/
+
+# Manter arquivos importantes
+!.nojekyll

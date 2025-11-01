@@ -1,0 +1,25 @@
+# robots.txt para GitHub Pages
+# Permite que todos os bots indexem o site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mellow-up.github.io/portfolio-vscode-theme/sitemap.xml
+
+# OpenAI GPTBot e outros crawlers específicos
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
