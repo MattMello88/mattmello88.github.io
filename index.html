@@ -67,6 +67,14 @@
 </head>
 <body>
     <div class="container">
+        <!-- Botão Menu Mobile -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Overlay para mobile -->
+        <div class="mobile-overlay" id="mobile-overlay"></div>
+        
         <!-- Activity Bar (Barra lateral esquerda com ícones) -->
         <aside class="activity-bar">
             <div class="activity-icon active" data-section="explorer" title="Explorador">
@@ -88,6 +96,9 @@
 
         <!-- Sidebar (Explorador de arquivos) -->
         <aside class="sidebar" id="explorer-panel">
+            <button class="close-sidebar" id="close-sidebar" aria-label="Fechar menu">
+                <i class="fas fa-times"></i>
+            </button>
             <div class="sidebar-header">
                 <div class="sidebar-title">
                     <i class="fas fa-folder"></i>

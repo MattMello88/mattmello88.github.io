@@ -244,6 +244,73 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // ========== MOBILE MENU ==========
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar');
+    const sidebar = document.getElementById('explorer-panel');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+    
+    function openMobileMenu() {
+        sidebar.classList.add('active');
+        mobileOverlay.classList.add('active');
+        mobileMenuBtn.classList.add('active');
+        mobileMenuBtn.querySelector('i').classList.remove('fa-bars');
+        mobileMenuBtn.querySelector('i').classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenu() {
+        sidebar.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+        mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+        mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+        document.body.style.overflow = '';
+    }
+    
+    // Abrir menu mobile
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (sidebar.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+    }
+    
+    // Fechar menu ao clicar no overlay
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Fechar menu ao clicar no botão de fechar
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Fechar menu ao clicar em um arquivo (mobile)
+    fileItems.forEach(file => {
+        file.addEventListener('click', function() {
+            // Fechar menu mobile se estiver aberto
+            if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+    });
+    
+    // Fechar menu ao redimensionar para desktop
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        }, 250);
+    });
+    
     // ========== INICIALIZAÇÃO ==========
     // Ativar o primeiro arquivo por padrão
     const firstFile = document.querySelector('.file[data-content="about"]');
